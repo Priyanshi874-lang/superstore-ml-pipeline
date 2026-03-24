@@ -41,7 +41,7 @@ Marketing teams spend significant resources on campaigns with low response rates
 
 ---
 
-##Architecture
+### Architecture
 
 ### Pipeline Components:
 
@@ -73,3 +73,50 @@ Marketing teams spend significant resources on campaigns with low response rates
 ## 📈 Model Performance
 
 ### Random Forest Results (Best Model)
+Accuracy: 85.71% Precision: 83.57% Recall: 85.71% F1 Score: 83.66%
+
+### Logistic Regression Results
+Accuracy: 85.49% Precision: 83.21% Recall: 85.49% F1 Score: 83.32%
+
+### Hyperparameters (Random Forest)
+- n_estimators: 100
+- max_depth: 10
+- random_state: 42
+
+---
+
+1. Data Preparation
+import pandas as pd
+
+# Load data
+df = pd.read_csv('data/superstore_data.csv')
+print(df.shape)  # (2240, 22)
+
+2. Preprocessing
+from src.preprocessing import preprocess_data
+X_processed, y = preprocess_data(df)
+
+3. Feature Engineering
+from src.feature_engineering import engineer_features
+X_engineered = engineer_features(X_processed
+
+4. Model Training
+from src.model_training import train_models
+best_model, results = train_models(X_engineered, y)
+
+5. Make Predictions
+# Single prediction
+customer_data = [[...]]  # Customer features
+prediction = best_model.predict(customer_data)
+probability = best_model.predict_proba(customer_data)
+
+print(f"Prediction: {prediction[0]}")
+print(f"Probability: {probability[0]}")
+
+
+
+
+
+
+
+
