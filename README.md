@@ -87,8 +87,7 @@ Accuracy: 85.49% Precision: 83.21% Recall: 85.49% F1 Score: 83.32%
 
 1. Data Preparation
 import pandas as pd
-
-# Load data
+Load data
 df = pd.read_csv('data/superstore_data.csv')
 print(df.shape)  # (2240, 22)
 
@@ -105,7 +104,7 @@ from src.model_training import train_models
 best_model, results = train_models(X_engineered, y)
 
 5. Make Predictions
-# Single prediction
+Single prediction
 customer_data = [[...]]  # Customer features
 prediction = best_model.predict(customer_data)
 probability = best_model.predict_proba(customer_data)
