@@ -4,7 +4,7 @@
 
 ---
 
-## 🏗️ Architecture Diagram
+##  Architecture Diagram
 
 BizPulse operates on a modern, decoupled architecture allowing for high scalability. The frontend consists of a Single Page Application (SPA) built with Vanilla Javascript and Tailwind CSS, while the backend is an asynchronous Python API.
 
@@ -43,7 +43,7 @@ graph TD
 
 ---
 
-## 🚀 Installation & Standard Setup
+##  Installation & Standard Setup
 
 We provide two distinct methods to launch BizPulse depending on your environment.
 
@@ -94,7 +94,7 @@ All protected endpoints require the `Authorization` header with a Bearer token: 
 
 ---
 
-## 🧑‍💻 User Manual
+## User Manual
 
 ### 1. Registration & Secure Login
 1. Navigate to `login.html` in your browser.
